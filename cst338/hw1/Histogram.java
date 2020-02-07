@@ -1,5 +1,5 @@
 // Kyle Xyian Dilbeck 
-// CST338 | HW1 
+// CST338 | HW1 | Histogram.java
 // 2/3/2020
 // This program will take input and create/read a new file to create a histogram from the given values 
 // v1.3.4
@@ -9,6 +9,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 public class Histogram {
     public static void main(String args[]) {
+        System.out.print("@KyleXyianDilbeck hw1 Histogram.java \n@\n@CST338\nWelcome to Kyle's Histogram!\nInput FileName: ");
         int count = 0;
         int i = 0;
         String filename;
@@ -30,12 +31,12 @@ public class Histogram {
         char input;
         char[] arr = new char[]{'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K'};
         while (scan != null && scan.hasNext()) {
-            input = scan.next().charAt(counter);
+            input = scan.next().charAt(counter);//scan char only at unchecked pos   
             for (int k = 0; k < 11; k++) {
                 if (arr[k] == input) {
                     arr2[k]++;
                 }
-            }
+            }//end for loop 
         }
         System.out.println("Char  Occurrence");
         for(int m = 0; m < 11; m++){
@@ -57,6 +58,7 @@ public class Histogram {
             }
         }
         count = arr2[10];
+        //create output graph here 
         System.out.println("============= Vertical Bar ============= ");
         for(int n = 0; n < 11; n++){
             if(count > 0) {
@@ -79,5 +81,5 @@ public class Histogram {
         }
         System.out.println();
         System.out.println("========================================");
-    }
-}
+    }//end MAIN
+}//END HISTOGRAM
