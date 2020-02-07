@@ -1,3 +1,9 @@
+// Kyle Xyian Dilbeck 
+// CST338 | HW1 
+// 2/3/2020
+// This program will take input and create/read a new file to create a histogram from the given values 
+// v1.3.4
+
 import java.io.*;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -66,8 +72,6 @@ public class Histogram {
                 System.out.println();
             }
         }
-//        System.out.println(count);
-//       System.out.println(Arrays.toString(arr2));
         System.out.println("========================================");
         System.out.print("| No | ");
         for(int b=0;b<11;b++){
