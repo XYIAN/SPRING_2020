@@ -1,0 +1,6 @@
+1
+100,Y. Byun,ybyun@csumb.edu,111-111-1111
+1
+338,CST338 - Software Design,100,BIT 104
+1
+7777,Alice Otter
